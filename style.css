@@ -1,0 +1,98 @@
+/* blue : #3889c4
+pink : #ffd7db
+yellow : #ffd600 */
+:root {
+    --main-blue-color : #3889c4;
+    --main-pink-color : #ffd7db;
+    --main-yellow-color : #ffd600;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-color: #29282d;
+    margin : 0 auto;
+    text-align: center;
+    padding: 0;
+}
+button {
+    margin: 0 ;
+    padding: 0 ;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.logo {
+    margin-top:30px
+}
+.logo img {
+    width:70px;
+    cursor: pointer;
+}
+
+/* content */
+.content {
+    width:350px;
+    margin : 0 auto;
+    padding : 0 ;
+    margin-top:20px;
+}
+.buttonGroup{
+    display: flex;
+    margin: 0 auto;
+    height: 30px;
+}
+.buttonGroup img {
+    width:25px;
+    height:25px;
+    vertical-align: center;
+}
+.buttonGroup button {
+    height:25px;
+    margin: 0 auto;
+    width:80px;
+    margin-right:10px;
+}
+.buttonGroup button:last-child {
+    margin-right:0px;
+}
+.buttonGroup button:hover{
+    transform: scale(1.1)
+}
+button.blue{
+    background-color: var(--main-blue-color);
+}
+button.yellow{
+    background-color: var(--main-yellow-color);
+}
+button.pink {
+    background-color: var(--main-pink-color);
+}
+
+.itemArea {
+    margin-top:15px;
+    height:400px;
+    overflow-y:scroll;   
+}
+.itemArea::-webkit-scrollbar {
+    display: none;
+}
+.itemArea ul {
+    text-align: left;
+}
+.itemArea img {
+    width:25px;
+    height:25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.itemArea li {
+    background-color: white;
+    padding:5px;
+    font-size: 12px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    height:25px;
+}
